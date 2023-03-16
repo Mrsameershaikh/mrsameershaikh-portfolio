@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sameer Ahmed - Web Developer , Programmer</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/javascript/index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("h9Q0SPgAoR6PamP51");
+   })();
+</script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar sidebarGo">
+
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/intro.html">My Intro</a></li>
+          <li><a href="/pages/education.html">Education</a></li>
+          <li><a href="/pages/experience.html">Experience</a></li>
+          <li><a href="/pages/projects.html">Projects</a></li>
+          <li><a href="/pages/contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main content -->
+    <div class="main">
+      <div class="hamburger">
+        <img class="ham" src="/images/menu-burger.png" alt="hamb" width="45px">
+        <img class="cross" src="/images/cross.png" alt="cross" width="45px">
+      </div>
+      <div class="contactForm slideLeft">
+        <form action="https://formspree.io/f/meqwzpew" method="POST" id="form">
+          <h1>Contact me for work/general enquiries</h1>
+          <div class="mb-3">
+            <label for="clientName" class="form-label">Name</label>
+            <input type="text" name="Name" class="form-control" id="clientName" aria-describedby="namelHelp" required>
+          </div>
+          <div class="mb-3">
+            <label for="clientEmail" class="form-label">Email address</label>
+            <input type="email" name="Email" class="form-control" id="clientEmail" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+          </div>
+          <!-- <div class="mb-3">
+            <label for="clientPhone" class="form-label">Phone</label>
+            <input type="number" class="form-control" id="clientPhone">
+          </div> -->
+          <div class="mb-3">
+            <label for="clientEnquiry" class="form-label">Enquiry</label>
+            <!-- <input type="text" class="form-control" id="clientEnquiry"> -->
+            <textarea name="message" name="Enquiry" id="clientEnquiry" required></textarea>
+          </div>
+          <!-- <div class="mb-3 form-check" id="formCheck">
+            <input type="checkbox" class="form-check-input" id="isClient">
+            <label class="form-check-label" for="isClient">I want you to work on a project with me</label>
+          </div> -->
+          <button type="submit" class="btn btn-sm">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="/javascript/script.js"></script>
+</body>
+
+</html>
